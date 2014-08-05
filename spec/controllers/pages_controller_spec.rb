@@ -8,7 +8,7 @@ RSpec.describe PagesController, :type => :controller do
       expect(response).to be_success
     end
 	it "devrait avoir le bon titre" do
-      get 'home'
+      get 'homes'
       response.should have_selector("title",
                         :content => "Simple App du Tutoriel Ruby on Rails | Accueil")
     end
@@ -20,7 +20,7 @@ RSpec.describe PagesController, :type => :controller do
       expect(response).to be_success
     end
 	it "devrait avoir le bon titre" do
-      get 'home'
+      get 'contact'
       response.should have_selector("title",
                         :content => "Simple App du Tutoriel Ruby on Rails | Contact")
     end
@@ -32,7 +32,7 @@ RSpec.describe PagesController, :type => :controller do
       expect(response).to be_success
     end
 	it "devrait avoir le bon titre" do
-      get 'home'
+      get 'about'
       response.should have_selector("title",
                         :content => "Simple App du Tutoriel Ruby on Rails | About")
     end
