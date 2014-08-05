@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe PagesController, :type => :controller do
 	render_views
+	
   describe "GET homes" do
     it "returns http success" do
       get :homes
